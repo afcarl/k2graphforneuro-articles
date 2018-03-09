@@ -48,7 +48,7 @@
 
 			<span class="main attr">Illustration of a Neural Network by CBurnett licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span>
 
-			<p class="main">A graph can be written in matrix form as an adjacency matrix. An adjacency matrix is a representation of a graph that is a type of square matrix where each element represents an edge. The correspending nodes connected by a weight are indicated by the row and column of the edge in the matrix.</p>
+			<p class="main">A graph can be written in matrix form as an adjacency matrix. An adjacency matrix is a representation of a graph that is a type of square matrix where each element represents an edge. The corresponding nodes connected by a weight are indicated by the row and column of the edge in the matrix.</p>
 
 			<img class="main" src="adjacency_matrix.png">
 
@@ -70,14 +70,14 @@
 
 			<h2 class="main">Going from Tree to Graph</h2>
 
-			<p class="main">The first necessary change to make K<sup>2</sup> Tree into K<sup>2</sup> Graph is the addition of real numbers. For the K<sup>2</sup> Graph, real numbers can exist in the nodes <i>and</i> the links. Let's start with a simple example. Note that there is some restructing here to help make the difference between nodes and a links more explicit by packaging the nodes into matrices of k by k.</p>
+			<p class="main">The first necessary change to make K<sup>2</sup> Tree into K<sup>2</sup> Graph is the addition of real numbers. For the K<sup>2</sup> Graph, real numbers can exist in the nodes <i>and</i> the links. Let's start with a simple example. Note that there is some restructuring here to help make the difference between nodes and links more explicit by packaging the nodes into matrices of k by k.</p>
 
 			<img class="main" src="k2graph1.png">
 
 			<span class="main attr">An simple example of a K<sup>2</sup> graph, again where k = 2.</span>
 
 
-			<p class="main">Giving values to the links gives allows for more expressive power so that different sub-matrices can have different weightings, which will be important for evolution.</p>
+			<p class="main">Giving values to the links allows for more expressive power so that different sub-matrices can have different weightings, which will be important for evolution.</p>
 
 			<p class="main">Graph structures differ from tree structures in that they allow reuse of nodes. The K<sup>2</sup> graph will thus be a Directed Acyclic Graph (DAG). In this example, the lower node is referred to twice but with a different weighting (0.5 and 0.6) each time.</p>
 
@@ -85,7 +85,7 @@
 
 			<span class="main attr">K<sup>2</sup> graph with node reuse.</span>
 
-			<p class="main">Take a look at the picture below. Can you imagine a way to use a K<sup>2</sup> Graph to roughly compress the adjacency matrix? Are there any symmetries or patterns in the adjacency matrix that can be exploited?</p>
+			<p class="main">Take a look at the picture below. Can you image a way to use a K<sup>2</sup> Graph to roughly compress the adjacency matrix? Are there any symmetries or patterns in the adjacency matrix that can be exploited?</p>
 
 			<img class="main" style="width: 700px" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Average_Regional_Connection_Matrix,_Network_Layout,_and_Connectivity_Backbone.png">
 
