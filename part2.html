@@ -25,7 +25,7 @@
 			see how to represent the graph as node genes and link genes. Then we'll see how the phenotype can be extracted and interpreted in a physical space.
 			</p>
 
-			<p class="main">Recall that genes in NEAT-like frameworks are of type types, node genes and link genes. The K<sup>2</sup> Graph will be no different in that respect. What does change is the contents of the nodes and the structure of the links. Instead of containing a function, the nodes of the K<sup>2</sup> Graph genome contain adjacency matrices. Furthermore, the K<sup>2</sup> is a <a href="https://en.wikipedia.org/wiki/Multigraph">MultiDigraph</a>, meaning that a pair of nodes can have multiple edges between them. Here's an example of a genome after 20 random mutations and k = 8.</p>
+			<p class="main">Recall that genes in NEAT-like frameworks are of two types, node genes and link genes. The K<sup>2</sup> Graph will be no different in that respect. What does change is the contents of the nodes and the structure of the links. Instead of containing a function, the nodes of the K<sup>2</sup> Graph genome contain adjacency matrices. Furthermore, the K<sup>2</sup> is a <a href="https://en.wikipedia.org/wiki/Multigraph">MultiDigraph</a>, meaning that a pair of nodes can have multiple edges between them. Here's an example of a genome after 20 random mutations and k = 8.</p>
 
 			<pre class="main prettyprint">
 Node Genes:
@@ -68,7 +68,7 @@ Link Genes:
 (2, 3, 62, {'weight': 1.2949757677960567, 'innovation': 3})
 			</pre>
 
-			<p class="main">The node genes consist of the node number followed by the internal matrix of the node. The link genes are the parent node, the child node, and the parent node's element in the matrix that is linked to the child node.</p>
+			<p class="main">The node genes consist of the node number followed by the internal matrix of the node. The link genes contain the parent node, the child node, and the parent node's element in the matrix that is linked to the child node, respectively</p>
 
 			<p class="main">Previously we saw how an adjacency matrix can be extracted from the genome. Yet we have not placed the neurons represented in the adjacency matrix in any sort of physical space. How do we choose which nodes are inputs and which are outputs? Here's where <a href="https://www.youtube.com/watch?v=3s7h2MHQtxc">space-filling curves</a>, like the Z-order curve can help us.</p>
 
@@ -84,11 +84,6 @@ Link Genes:
 
 			<p class="main">In the next post, we'll will create a simple experiment to evolve neural networks!</p>
 
-			<h2 class="main">References</h2>
-
-			<p class="main">
-			1. Brisaboa, N.R., Ladra, S., Navarro, G.: k2-trees for compact web graph representation. In: Karlgren, J., Tarhio, J., Hyyro, H. (eds.) SPIRE 2009. LNCS, vol. 5721, pp. 18-30. Springer, Heidelberg (2009)
-			</p>
 
 		</div>
 
